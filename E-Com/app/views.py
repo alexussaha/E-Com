@@ -14,7 +14,8 @@ def home(request):
         'app/index.html',
         {
             'title':'Home Page',
-            'year':2021,
+            'shop_name': 'MyShop',
+            'year':datetime.now().year,
         }
     )
 
@@ -26,6 +27,7 @@ def contact(request):
         'app/contact.html',
         {
             'title':'Contact',
+            'shop_name': 'MyShop',
             'message':'Your contact page.',
             'year':datetime.now().year,
         }
@@ -39,6 +41,7 @@ def about(request):
         'app/about.html',
         {
             'title':'About',
+            'shop_name': 'MyShop',
             'message':'Your application description page.',
             'year':datetime.now().year,
         }
